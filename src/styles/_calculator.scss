@@ -52,7 +52,7 @@
 
     button {
       margin-bottom: 20px;
-      background: #111c20;
+      background: $main;
       color: #FFF;
       padding: 10px 20px;
       border: none;
@@ -62,7 +62,7 @@
 
       &:hover {
         background: #9F9F9F;
-        color: #111c20;
+        color: $main;
       }
     }
   }
