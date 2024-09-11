@@ -1,0 +1,50 @@
+<div class="user-details" id="calculator">
+    <h1>Calculadora de Orçamentos</h1>
+  </div>
+  <div class="user-projects">
+    <div class="contents">
+      <form id="budget-calculator">
+        <label for="project-type">Tipo de Projeto:</label>
+        <select id="project-type" required>
+          <option value="">Selecione...</option>
+          <option value="architectural">Arquitetônico</option>
+          <option value="electrical">Elétrico</option>
+        </select>
+        
+        <label for="area">Área (m²):</label>
+        <input type="number" id="area" min="1" required>
+        
+        <button type="submit">Calcular</button>
+      </form>
+      <div id="result"></div>
+    </div>
+  </div>
+  
+  <script>
+  document.getElementById('budget-calculator').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const projectType = document.getElementById('project-type').value;
+    const area = parseFloat(document.getElementById('area').value);
+    let price = 0;
+    
+    if (projectType === 'architectural') {
+      price = area <= 100 ? area * 30 : 0; // Preço apenas para até 100m²
+    } else if (projectType === 'electrical') {
+      if (area <= 100) {
+        price = area * 6;
+      } else if (area <= 250) {
+        price = area * 5;
+      } else {
+        price = area * 4;
+      }
+    }
+    
+    const result = document.getElementById('result');
+    if (price > 0) {
+      result.textContent = `Orçamento estimado: R$ ${price.toFixed(2)}`;
+    } else {
+      result.textContent = 'Por favor, entre em contato para projetos maiores que 100m².';
+    }
+  });
+  </script>

@@ -1,0 +1,69 @@
+.user-details {
+  text-align: center;
+  margin-top: 50px;
+  h1 {
+    color: #111c20;
+    font-size: 30px;
+  }
+}
+
+.user-projects {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  .contents {
+    width: 100%;
+    max-width: 400px; // Ajuste conforme necessário
+    background: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #CCC;
+      box-sizing: border-box; // Isso garante que o padding não afete a largura total
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      gap: 10px; // Espaço entre o input e o botão
+
+      input {
+        flex-grow: 1;
+        margin-bottom: 0; // Remove a margem inferior do input
+      }
+
+      button {
+        flex-shrink: 0; // Impede que o botão encolha
+      }
+    }
+
+    button {
+      margin-bottom: 20px;
+      background: #111c20;
+      color: #FFF;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all .3s;
+
+      &:hover {
+        background: #9F9F9F;
+        color: #111c20;
+      }
+    }
+  }
+}

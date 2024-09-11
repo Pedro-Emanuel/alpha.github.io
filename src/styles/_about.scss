@@ -1,0 +1,74 @@
+#about {
+  width: 90%;
+  margin: 0 auto;
+  @media only screen and (min-width: $cut) {
+    width: 50%;
+  }
+}
+
+.tech {
+  margin: 10px;
+}
+
+.user {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  p {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: $cut) {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+}
+
+.user-details {
+  text-align: center;
+  margin: 5px auto;
+}
+
+.team {
+  text-align: center;
+  margin-top: 50px;
+
+  .team-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .contact-button {
+    margin-top: 20px;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #25D366; // Cor do WhatsApp
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #128C7E; // Cor mais escura para hover
+      }
+
+      i {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}

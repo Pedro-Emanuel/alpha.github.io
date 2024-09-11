@@ -1,0 +1,18 @@
+# Site settings
+title: Alpha Engineering
+description: Inovação contínua, sustentabilidade, compromisso, honestidade e conhecimento.
+# url: "https://alphaengineering.com" # Substitua pelo URL real quando disponível
+url: "alpha.github.io"
+
+# User settings
+username: Alpha Engineering
+user_description: Fundada em fevereiro de 2024, a Alpha Engineering é uma empresa cearense, compromissada com a qualidade e um serviço de excelência.
+user_title: Engenharia e Arquitetura Sustentável
+email: engineeringalpha2024@gmail.com
+instagram_username: alphaengee.ce
+
+# Google-analytics
+google-analytics:
+  id: "" # Substitua pelo seu ID do Google Analytics quando disponível
+
+exclude: ['package.json', 'src' , 'node_modules']
